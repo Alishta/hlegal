@@ -1,0 +1,93 @@
+@import 'tools.scss';
+@import 'top__section.scss';
+@import 'main.scss';
+@import 'footer.scss';
+@import 'popup.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+//RESET
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	position: relative;
+}
+img {
+	border-style: 0;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.img-wrap {
+	background-color: $basic-white-color;
+	border-radius: 24px;
+	width: 92px;
+	height: 92px;
+	padding: 14px;
+	margin-bottom: 30px;;
+	.servise__img {
+		width: 64px;
+		height: 64px;
+	}
+}
+
+.tabs-wrap {
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+	.tabs-wrap {
+		max-width: 1640px;
+	}
+}
+
+@media (max-width: 1920px) {
+	.tabs-wrap {
+		max-width: 1360px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.tabs-wrap {
+		max-width: 1080px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.tabs-wrap {
+		max-width: 904px;
+	}
+}
+
+@media (max-width: 768px) {
+	.tabs-wrap {
+		max-width: 100%;
+		padding: 0;
+	}
+}

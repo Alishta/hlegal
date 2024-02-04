@@ -1,0 +1,19 @@
+$basic-white-color: #fff;
+$addition-text-color: #24A3FF;
+$accent-color: #F0145A;
+$accent-gradient: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+$bg-gradient: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+@mixin gradient($b-img, $b-cl, $-w-b-c, $-w-t-f) {
+    background-image: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin flex($dir, $jc, $ai) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
