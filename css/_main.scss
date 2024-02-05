@@ -10,6 +10,7 @@
 
             .slider__img {
                 overflow: hidden;
+                border-radius: 12px 12px 0 0;
 
                 img {
                     display: block;
@@ -31,6 +32,7 @@
                 background-color: #F5F5FA;
                 display: flex;
                 flex-direction: column;
+                border-radius: 0 0 12px 12px;
                 gap: 6px;
 
                 .slider__heading {
@@ -205,6 +207,7 @@
 
                 .publication__block {
                     background-color: $basic-white-color;
+                    border-radius: 0 0 12px 12px;
 
                     .publication__img {
                         width: 100%;
@@ -416,6 +419,7 @@
                 .slider__img {
                     display: flex;
                     justify-content: center;
+                    border-radius: 12px 0 0 12px;
 
                     img {
                         width: auto;
@@ -426,6 +430,7 @@
                 .slider-text__block {
                     margin: 0;
                     width: 55%;
+                    border-radius: 0 12px 12px 0;
                 }
             }
         }
@@ -507,7 +512,8 @@
                 }
 
                 .slider__img {
-                    overflow: visible;
+                    // overflow: visible;
+                    border-radius: 12px 0 0 12px;
 
                     img {
                         width: auto;
@@ -518,6 +524,7 @@
                 .slider-text__block {
                     width: 64%;
                     padding: 30px 3%;
+                    border-radius: 0 12px 12px 0;
 
                     .slider__blockquote {
                         font-size: 2.3rem;
@@ -610,19 +617,21 @@
                 &.active {
                     flex-direction: row;
                 }
-
+                
                 .slider__img {
                     display: flex;
                     justify-content: center;
                     overflow: visible;
-
+                    
                     img {
                         width: auto;
                         height: 100%;
+                        border-radius: 12px 0 0 12px;
                     }
                 }
-
+                
                 .slider-text__block {
+                    border-radius: 0 12px 12px 0;
 
                     .slider__blockquote {
                         font-size: 2.3rem;
@@ -718,6 +727,23 @@
         .companies {
             width: 89.5%;
             margin: 60px auto;
+
+            .companies__block {
+                .companies__item {
+                    &:nth-child(1) {
+                        border-radius: 12px 0 0 0;
+                    }
+                    &:nth-child(4) {
+                        border-radius: 0 12px 0 0;
+                    }
+                    &:nth-child(9) {
+                        border-radius: 0 0 0 12px;
+                    }
+                    &:nth-child(12) {
+                        border-radius:0 0 12px 0;
+                    }
+                }
+            }
         }
 
         .publications {

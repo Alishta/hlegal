@@ -55,39 +55,3 @@ button {
 		height: 64px;
 	}
 }
-
-.tabs-wrap {
-	padding: 0 20px;
-	margin: 0 auto;
-}
-
-@media (min-width: 1920px) {
-	.tabs-wrap {
-		max-width: 1640px;
-	}
-}
-
-@media (max-width: 1920px) {
-	.tabs-wrap {
-		max-width: 1360px;
-	}
-}
-
-@media (max-width: 1440px) {
-	.tabs-wrap {
-		max-width: 1080px;
-	}
-}
-
-@media (max-width: 1024px) {
-	.tabs-wrap {
-		max-width: 904px;
-	}
-}
-
-@media (max-width: 768px) {
-	.tabs-wrap {
-		max-width: 100%;
-		padding: 0;
-	}
-}

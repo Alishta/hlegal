@@ -54,7 +54,7 @@
                             <a href="#" class="menu__link">publications</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link popup-link">contact</a>
+                            <a href="#" class="menu__link">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +83,7 @@
                             <a href="#" class="menu__link">publications</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link popup-link">contact</a>
+                            <a href="#" class="menu__link">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -100,7 +100,7 @@
                     <p class="service__text">
                         In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
                     </p>
-                    <a href="#" class="service__popup">
+                    <a href="#popup-overlay" class="service__popup popup-link">
                         Free consultation
                     </a>
                 </div>
@@ -202,7 +202,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none" class="dot">
                             <circle cx="3" cy="3" r="3" fill="#B3B3BA"/>
                         </svg>
-                        <a href="#" class="footer__address-link">On map</a>
+                        <a href="https://maps.app.goo.gl/v9PsAmzAKNP9e8QD8" class="footer__address-link" target="_blank">On map</a>
                     </div>
                     <div class="footer__contacts">
                         <img src="../imgs/Facebook-Footer.svg" alt="fb-logo" class="fb-logo">
@@ -221,6 +221,31 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="popup-overlay">
+        <div class="popup">
+            <h3 class="popup__heading">
+                We would like to help you
+            </h3>
+            <div class="cross">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                </svg>
+            </div>
+            <form action="" method="POST" class="popup__form">
+                <input type="text" name="name" placeholder="Name">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <p class="popup__text">
+                    How to answer you?
+                </p>
+                <input type="text" name="number" placeholder="Phone number">
+                <input type="email" name="email" placeholder="Email">
+                <button class="popup__button">
+                    Send message
+                </button>
+            </form>
+        </div>
     </div>
     <script src="../main.js"></script>
 </body>
