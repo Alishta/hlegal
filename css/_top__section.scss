@@ -208,6 +208,7 @@
                         font-weight: 700;
                         color: #B3B3BA;
                         cursor: pointer;
+                        transition: .5s all;
 
                         &.active {
                             @include gradient($accent-gradient, text, text, transparent);
@@ -318,6 +319,7 @@
 
             .service__text {
                 font-size: 1.2rem;
+                text-align: center;
             }
 
             .service__popup {
@@ -400,7 +402,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 840px) {
     .top__section {
 
         .header {
@@ -498,7 +500,7 @@
                     position: absolute;
                     top: 350px;
                     left: 15%;
-                    white-space: nowrap;
+                    // white-space: nowrap;
                 }
             }
 
@@ -575,7 +577,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 841px) and (max-width: 1024px) {
     .top__section {
         padding: 50px 60px 60px;
 
@@ -705,15 +707,18 @@
                     border-right: 4px solid rgba(255, 255, 255, 0.30);
                     border-bottom: none;
                     overflow: visible;
+                    text-align: right;
 
                     .tab__title {
                         padding-right: 60px;
                         font-size: 2.375rem;
+                        white-space: wrap;
                     }
                 }
 
                 .tab__content {
                     padding-left: 60px;
+                    width: 50%;
 
                     .tab__item {
                         display: none;
@@ -1009,7 +1014,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
     .top__section {
 
         .header {

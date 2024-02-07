@@ -182,6 +182,7 @@
   font-weight: 700;
   color: #B3B3BA;
   cursor: pointer;
+  transition: 0.5s all;
 }
 .top__section .tabs .tabs-wrap .tabs__categories .tab__title .tabs__link.active {
   background-image: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
@@ -274,6 +275,7 @@
 }
 .top__section .services__basic .service__entry-wrap .service__text {
   font-size: 1.2rem;
+  text-align: center;
 }
 .top__section .services__basic .service__entry-wrap .service__popup {
   padding: 18px 30px;
@@ -333,7 +335,7 @@
   color: #24A3FF;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 840px) {
   .top__section .header {
     width: 84%;
     margin: 0 auto;
@@ -403,7 +405,6 @@
     position: absolute;
     top: 350px;
     left: 15%;
-    white-space: nowrap;
   }
   .top__section .banner .tabs .tabs-wrap .tabs__categories {
     border-bottom: 4px solid rgba(255, 255, 255, 0.3);
@@ -451,7 +452,7 @@
     line-height: 26px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 841px) and (max-width: 1024px) {
   .top__section {
     padding: 50px 60px 60px;
   }
@@ -551,13 +552,16 @@
     border-right: 4px solid rgba(255, 255, 255, 0.3);
     border-bottom: none;
     overflow: visible;
+    text-align: right;
   }
   .top__section .tabs .tabs-wrap .tabs__categories .tab__title {
     padding-right: 60px;
     font-size: 2.375rem;
+    white-space: wrap;
   }
   .top__section .tabs .tabs-wrap .tab__content {
     padding-left: 60px;
+    width: 50%;
   }
   .top__section .tabs .tabs-wrap .tab__content .tab__item {
     display: none;
@@ -777,7 +781,7 @@
     line-height: 26px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .top__section .header {
     width: 91%;
     margin: 0 auto;
@@ -976,7 +980,7 @@
 }
 .main .slider .slider__content .slider__img img {
   display: block;
-  width: 315px;
+  width: 100%;
   margin: 0 auto;
 }
 .main .slider .slider__content.active {
@@ -1056,7 +1060,6 @@
 }
 .main .companies .companies__block .companies__item {
   width: 100%;
-  max-width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -1131,11 +1134,10 @@
 }
 .main .publications .publications-wrap .publication__container .publication__block {
   background-color: #fff;
-  border-radius: 0 0 12px 12px;
+  border-radius: 12px;
 }
 .main .publications .publications-wrap .publication__container .publication__block .publication__img {
   width: 100%;
-  max-width: 315px;
 }
 .main .publications .publications-wrap .publication__container .publication__block .publication__text-wrap {
   display: flex;
@@ -1205,7 +1207,7 @@
   stroke: #F0145A;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 840px) {
   .main .slider {
     margin: 60px auto;
   }
@@ -1247,9 +1249,6 @@
   .main .publications .publications-wrap .publication__container .publication__block:last-child {
     width: 100%;
   }
-  .main .publications .publications-wrap .publication__container .publication__block .publication__img {
-    max-width: 648px;
-  }
   .team__main {
     margin-top: 60px;
   }
@@ -1262,10 +1261,10 @@
     flex-wrap: wrap;
   }
   .team__main .main__list .list__item {
-    width: 45%;
+    width: 43%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 841px) and (max-width: 1024px) {
   .main .slider {
     margin-top: 60px;
   }
@@ -1408,7 +1407,7 @@
     width: 27%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .main {
     margin: 60px 0 0;
   }
@@ -1592,12 +1591,13 @@
 .footer .footer-wrap .footer__copy {
   padding-top: 30px;
   color: #B3B3BA;
+  text-align: center;
 }
 .footer .team-footer-wrap {
   border-top: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 600px) {
   .footer .footer-wrap {
     width: 84%;
     margin: 0 auto;
@@ -1647,9 +1647,21 @@
     border-top: none;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 841px) and (max-width: 1024px) {
   .footer .footer-wrap {
-    width: 91%;
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .footer .footer-wrap {
+    width: 87%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1920px) {
+  .footer .footer-wrap {
+    width: 81%;
     margin: 0 auto;
   }
 }

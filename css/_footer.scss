@@ -84,6 +84,7 @@
     .footer__copy {
       padding-top: 30px;
       color: #B3B3BA;
+      text-align: center;
     }
   }
 
@@ -92,7 +93,7 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 600px) {
   .footer {
     .footer-wrap {
       width: 84%;
@@ -147,10 +148,28 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 841px) and (max-width: 1024px) {
   .footer {
     .footer-wrap {
-      width: 91%;
+      width: 92%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .footer {
+    .footer-wrap {
+      width: 87%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .footer {
+    .footer-wrap {
+      width: 81%;
       margin: 0 auto;
     }
   }
