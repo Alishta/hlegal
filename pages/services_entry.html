@@ -66,14 +66,19 @@
                             <path d="M7 22.5H25" stroke="white" stroke-width="2"/>
                         </svg>
                     </button>
+                </div>
+                <div class="burger__menu-wrap">
                     <button id="burger__cross">
-                        <img src="../imgs/x-cross.png" alt="cross">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                        </svg>
                     </button>
                     <ul class="burger__menu menu">
                         <li class="menu__item">
                             <a href="#" class="menu__link">about us</a>
                         </li>
-                        <li class="menu__item">
+                        <li class="menu__item current-page">
                             <a href="services_entry.html" class="menu__link" target="_blank">services</a>
                         </li>
                         <li class="menu__item">
@@ -108,8 +113,8 @@
                     <h2 class="service__list-heading">
                         Services in this area:
                     </h2>
-                    <ul class="service__list list">
-                        <div class="list-wrap">
+                    <div class="service__list list">
+                        <ul class="list-wrap">
                             <li class="list__item">
                                 support of investment projects for the development of port infrastructure;
                             </li>
@@ -122,8 +127,8 @@
                             <li class="list__item">
                                 registration of permit and other mandatory documentation required for carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);
                             </li>
-                        </div>
-                        <div class="list-wrap">
+                        </ul>
+                        <ul class="list-wrap">
                             <li class="list__item">
                                 support of procedures related to the lease of state property in the port;
                             </li>
@@ -136,8 +141,8 @@
                             <li class="list__item">
                                 appeals against actions related to the illegal imposition of services in the port by monopoly companies.
                             </li>
-                        </div>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -233,7 +238,7 @@
                     <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
                 </svg>
             </div>
-            <form action="" method="POST" class="popup__form">
+            <form action="https://fom.in.ua/echo" method="POST" class="popup__form">
                 <input type="text" name="name" placeholder="Name">
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                 <p class="popup__text">

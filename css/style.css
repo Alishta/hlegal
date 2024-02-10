@@ -95,36 +95,46 @@
   right: 15px;
   top: 50px;
 }
-.top__section .header .nav__burger #burger__cross {
-  display: none;
-  position: absolute;
-  right: 7px;
-}
-.top__section .header .nav__burger #burger__cross img {
+.top__section .header .nav__burger img {
   width: 23px;
 }
-.top__section .header .nav__burger .burger__menu {
+.top__section .header .burger__menu-wrap #burger__cross {
   display: none;
-  width: 150px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8078431373);
+  position: absolute;
+  right: 15px;
+  top: 55px;
+  z-index: 2;
+}
+.top__section .header .burger__menu-wrap .burger__menu {
+  display: none;
+  width: 96%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px 12px 12px 12px;
   border-radius: 10px;
   position: absolute;
   top: 50px;
-  right: 10px;
+  left: 2%;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
-.top__section .header .nav__burger .burger__menu .menu__item {
+.top__section .header .burger__menu-wrap .burger__menu .menu__item {
   text-align: center;
+  height: 43px;
+  background-color: #f5f5fa;
+  border-radius: 12px;
 }
-.top__section .header .nav__burger .burger__menu .menu__item:hover {
-  transform: scale(1.1, 1.1);
-  transition: 0.5s all;
+.top__section .header .burger__menu-wrap .burger__menu .menu__item:active {
+  transition: 0.2s all;
+  background: #E6E6F0;
 }
-.top__section .header .nav__burger .burger__menu .menu__item .menu__link {
-  color: #323264;
+.top__section .header .burger__menu-wrap .burger__menu .menu__item .menu__link {
+  color: #24A3FF;
   font-weight: 700;
+  line-height: 43px;
+}
+.top__section .header .burger__menu-wrap .burger__menu .current-page .menu__link {
+  color: #F0145A;
 }
 .top__section .banner .banner__block {
   position: relative;
@@ -288,12 +298,10 @@
 .top__section .services__basic .service__list-heading {
   margin: 30px 0;
 }
-.top__section .services__basic .service__list-container .list {
+.top__section .services__basic .service__list-container .list .list-wrap {
   list-style-image: url(../imgs/list_separator.svg);
   list-style-position: outside;
   margin-left: 10px;
-}
-.top__section .services__basic .service__list-container .list .list-wrap {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1757,7 +1765,7 @@
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   #popup-overlay .popup {
     width: 100%;
     position: relative;

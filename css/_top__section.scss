@@ -109,40 +109,53 @@
             position: absolute;
             right: 15px;
             top: 50px;
-
+            
+            img {
+                width: 23px;
+            }
+        }
+        
+        .burger__menu-wrap {
             #burger__cross {
                 display: none;
                 position: absolute;
-                right: 7px;
-
-                img {
-                    width: 23px;
-                }
+                right: 15px;
+                top: 55px;
+                z-index: 2;
             }
-
             .burger__menu {
                 display: none;
-                width: 150px;
-                padding: 10px;
-                background-color: #ffffffce;
+                width: 96%;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 50px 12px 12px 12px;
                 border-radius: 10px;
                 position: absolute;
                 top: 50px;
-                right: 10px;
+                left: 2%;
                 flex-direction: column;
-                gap: 5px;
-
+                gap: 10px;
+    
                 .menu__item {
                     text-align: center;
-
-                    &:hover {
-                        transform: scale(1.1, 1.1);
-                        transition: .5s all;
+                    height: 43px;
+                    background-color: #f5f5fa;
+                    border-radius: 12px;
+    
+                    &:active {
+                        transition: .2s all;
+                        background: #E6E6F0;
                     }
-
+                    
                     .menu__link {
-                        color: #323264;
+                        color: $addition-text-color;
                         font-weight: 700;
+                        line-height: 43px;
+                    }
+                }
+                .current-page {
+                    .menu__link {
+                        color: $accent-color;
                     }
                 }
             }
@@ -338,11 +351,11 @@
 
         .service__list-container {
             .list {
-                list-style-image: url(../imgs/list_separator.svg);
-                list-style-position: outside;
-                margin-left: 10px;
-
+                
                 .list-wrap {
+                    list-style-image: url(../imgs/list_separator.svg);
+                    list-style-position: outside;
+                    margin-left: 10px;
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
